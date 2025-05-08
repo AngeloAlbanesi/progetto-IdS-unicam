@@ -29,4 +29,7 @@ public class Pacchetto implements Acquistabile {
     public String getDescrizione() {
         return descrizione;
     }
+    public double getPrezzo() {
+        return prezzoPacchetto;
+    }
 }

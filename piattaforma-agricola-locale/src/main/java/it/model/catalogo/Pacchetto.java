@@ -32,4 +32,5 @@ public class Pacchetto implements Acquistabile {
     public double getPrezzo() {
         return prezzoPacchetto;
     }
+
 }

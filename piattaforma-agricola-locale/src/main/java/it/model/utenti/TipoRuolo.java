@@ -1,0 +1,12 @@
+package it.model.utenti;
+
+public enum TipoRuolo {
+    ACQUIRENTE,
+    VENDITORE,
+    PRODUTTORE,
+    TRASFORMATORE,
+    DISTRIBUTORE_DI_TIPICITA,
+    CURATORE,
+    ANIMATORE_DELLA_FILIERA,
+    GESTORE_PIATTAFORMA
+}

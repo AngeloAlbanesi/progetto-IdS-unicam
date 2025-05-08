@@ -32,5 +32,19 @@ public class Pacchetto implements Acquistabile {
     public double getPrezzo() {
         return prezzoPacchetto;
     }
+    public  void aggiungiElemento(Acquistabile elemento) {
+        this.elementiInclusi.add(elemento);
+    }
 
+    public void rimuoviElemento(Acquistabile elemento) {
+        this.elementiInclusi.remove(elemento);
+    }
+
+    public List<Acquistabile> getElementiInclusi() {
+        return elementiInclusi;
+    }
+
+    public DistributoreDiTipicita getDistributore() {
+        return distributore;
+    }
 }

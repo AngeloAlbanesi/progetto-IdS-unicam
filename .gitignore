@@ -66,3 +66,5 @@ application-local.yaml
 application-test.yaml
 piattaforma-agricola-locale/mvnw
 piattaforma-agricola-locale/mvnw.cmd
+
+memory-bank/

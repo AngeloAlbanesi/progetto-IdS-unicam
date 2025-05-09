@@ -1,8 +1,13 @@
 package it.model.tracciabilita;
 
+import java.util.List;
+
+import it.model.catalogo.Ingrediente;
+import it.model.catalogo.Prodotto;
+
 public class FaseLavorazione {
     private int ordineFase;
-    private String Descrizione;
+    private String descrizione;
     private List<Ingrediente> ingredientiUtilizzati;
     private Prodotto prodottoRisultante;
 

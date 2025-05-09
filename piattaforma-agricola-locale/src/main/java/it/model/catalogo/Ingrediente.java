@@ -11,7 +11,7 @@ public class Ingrediente {
         this.nomeIngrediente = nomeIngrediente;
         this.descrizioneIngrediente = descrizioneIngrediente;
         this.origineDichiarata = origineDichiarata;
-        this.quantitaUtilizzata = quantiutilizzata;
+        this.quantitaUtilizzata = quantitaUtilizzata;
         this.isLocaleVerificato = false;
     }
 }

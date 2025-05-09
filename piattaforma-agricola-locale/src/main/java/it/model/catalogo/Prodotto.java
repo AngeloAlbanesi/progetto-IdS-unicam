@@ -1,7 +1,12 @@
 package it.model.catalogo;
 
+import java.util.ArrayList;
+
 import it.model.common.Acquistabile;
 import it.model.common.ElementoVerificabile;
+import it.model.common.StatoVerificaContenuto;
+import it.model.utenti.Venditore;
+import java.util.List;
 
 public class Prodotto implements Acquistabile, ElementoVerificabile {
 
@@ -16,7 +21,7 @@ public class Prodotto implements Acquistabile, ElementoVerificabile {
     private Venditore venditore;
     private List<Certificazione> certificazioniProdotto;
 
-    pubic Prodotto(String idProdotto, String nome, String descrizione, double prezzo, int quantitaDisponibile,Venditore venditore) {
+    public Prodotto(String idProdotto, String nome, String descrizione, double prezzo, int quantitaDisponibile,Venditore venditore) {
         this.idProdotto = idProdotto;
         this.nome = nome;
         this.descrizione = descrizione;
@@ -46,7 +51,7 @@ public class Prodotto implements Acquistabile, ElementoVerificabile {
     public int getQuantitaDisponibile() {
         return quantitaDisponibile;
     }
-    puclic void setStatoVerifica(StatoVerificaContenuto statoVerifica) {
+    public void setStatoVerifica(StatoVerificaContenuto statoVerifica) {
         this.statoVerifica = statoVerifica;
 
     }
@@ -68,7 +73,7 @@ public class Prodotto implements Acquistabile, ElementoVerificabile {
     public void aggiungiCertificazione(Certificazione certificazione) {
         this.certificazioniProdotto.add(certificazione);
     }
-    publicc List<Certificazione> getCertificazioni() {
+    public List<Certificazione> getCertificazioni() {
         return certificazioniProdotto;
     }
     public void aggiornaQuantitaDisponibile(int quantita) {

@@ -1,10 +1,14 @@
 package it.model.ordini;
 
+import java.util.List;
+
+import it.model.utenti.Acquirente;
+
 public class Ordine {
     private String idOrdine;
     private Date dataOraOrdine;
     private double importoTotale;
-    privare StatoOrdine statoCorrente;
+    private StatoOrdine statoCorrente;
     private Acquirente acquirente;
     private List<RigaOrdine> righeOrdine;
 

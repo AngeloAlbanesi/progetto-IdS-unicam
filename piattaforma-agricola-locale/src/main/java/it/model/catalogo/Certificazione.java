@@ -1,6 +1,7 @@
 >package it.model.catalogo;
 
 import it.model.common.ElementoVerificabile;
+import it.model.common.StatoVerificaContenuto;
 
 public class Certificazione implements ElementoVerificabile {
     private String idCertificazione;

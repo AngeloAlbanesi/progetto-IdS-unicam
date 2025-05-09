@@ -1,6 +1,9 @@
 package it.model.catalogo;
 
+import java.util.List;
+
 import it.model.common.Acquistabile;
+import it.model.utenti.DistributoreDiTipicita;
 
 public class Pacchetto implements Acquistabile {
     private String idPacchetto;

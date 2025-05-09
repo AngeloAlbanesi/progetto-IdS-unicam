@@ -1,5 +1,7 @@
 package it.model.ordini;
 
+import it.model.common.Acquistabile;
+
 public class RigaOrdine {
     private String idRiga;
     private Acquistabile acquistabile;

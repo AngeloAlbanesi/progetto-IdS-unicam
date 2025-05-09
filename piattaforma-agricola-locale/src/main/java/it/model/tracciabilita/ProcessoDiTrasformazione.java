@@ -1,5 +1,7 @@
 package it.model.tracciabilita;
 
+import java.util.List;
+
 public class ProcessoDiTrasformazione {
     private String idProcesso;
     private String nomeProcesso;

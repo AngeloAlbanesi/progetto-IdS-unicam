@@ -1,23 +1,30 @@
+/*
+ *   Copyright (c) 2025 
+ *   All rights reserved.
+ */
 package it.model.utenti;
 
 public abstract class Utente {
+    private String idUtente;
     private String nome;
     private String cognome;
     private String email;
     private String passwordHash;
     private String numeroTelefono;
-    protected TipoRuolo tipoRuolo;
+    private TipoRuolo tipoRuolo;
     private boolean isAttivo;
 
     public Utente(String nome, String cognome, String email, String passwordHash, String numeroTelefono,
-            TipoRuolo tipoRuolo) {
+            String idUtente,
+            TipoRuolo tipoRuolo, boolean isAttivo) {
+        this.idUtente = idUtente;
         this.nome = nome;
         this.cognome = cognome;
         this.email = email;
         this.passwordHash = passwordHash;
         this.numeroTelefono = numeroTelefono;
         this.tipoRuolo = tipoRuolo;
-        this.isAttivo = true; // Imposta isAttivo a true per default
+        this.isAttivo = isAttivo; // Imposta isAttivo in base al parametro
     }
 
     public String getNome() {
@@ -85,7 +92,5 @@ public abstract class Utente {
         this.isAttivo = true;
     }
 
-    public boolean isAttivo() {
-        return isAttivo;
-    }
+    
 }

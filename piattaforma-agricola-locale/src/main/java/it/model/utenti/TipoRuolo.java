@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2025 
+ *   All rights reserved.
+ */
 package it.model.utenti;
 
 public enum TipoRuolo {
